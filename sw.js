@@ -1,7 +1,7 @@
 // Service worker di "Partita ridotta": la partita funziona anche senza rete dopo la prima apertura.
 const VERSIONE = "partita-v1";
-const BASE = ["./", "index.html", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"];
-const AUDIO = ["audio/regole.mp3", "audio/finale.mp3", "audio/musica.m4a"];
+const BASE = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "apple-touch-icon.png"];
+const AUDIO = ["regole.mp3", "finale.mp3", "musica.m4a"];
 
 self.addEventListener("install", e => {
   e.waitUntil((async () => {

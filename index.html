@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#000000">
 <title>Partita ridotta</title>
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" type="image/png" href="icons/icon-192.png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Partita ridotta">
@@ -7542,7 +7542,7 @@ const VERSIONE = Object.assign({
 // sintetizzate degli Archivi culturali.
 // ════════════════════════════════════════════════════════════
 
-const FILE_AUDIO = { musica: "audio/musica.m4a", regole: "audio/regole.mp3", finale: "audio/finale.mp3" };
+const FILE_AUDIO = { musica: "musica.m4a", regole: "regole.mp3", finale: "finale.mp3" };
 const Audio_ = {
   el: {}, disponibile: {}, ctx: null, drone: null, battitoTimer: null, archivioBus: null, archivioTimers: [],
   volumeBase: 0.9, ducking: false, rilascioDuck: null, muto: false,
@@ -7704,7 +7704,7 @@ function suonaAudioFinale(alTermine) {
 // ── MUSICA DELLA PARTE 2: un file scelto dal computer o dal telefono (CARICA MUSICA), resta nella pagina finché è aperta ──
 // Nelle versioni a solo bordone (partita da 10 minuti, partita breve) suona dall'inizio della parte 2 al posto del bordone,
 // con la stessa entrata in dissolvenza; se finisce prima, entra il bordone. Nella partita breve, se dura di più, a 11:00
-// sfuma nel bordone del finale. Nelle altre versioni prende il posto di audio/musica.m4a.
+// sfuma nel bordone del finale. Nelle altre versioni prende il posto di musica.m4a.
 Audio_.nomeMusica = "musica.m4a";
 function caricaMusica(file) {
   const a = Audio_.el.musica;
